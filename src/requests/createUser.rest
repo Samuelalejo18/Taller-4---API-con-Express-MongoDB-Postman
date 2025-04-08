@@ -1,0 +1,67 @@
+
+POST   http://localhost:4000/api/register
+Content-Type: application/json
+{
+  "name": "Samuel",
+  "lastName": "Monsalve",
+  "age": 25,
+  "email": "samuel.monsalves@example.com",
+  "password": "StrongP@ss1",
+  "phone": "3001234567",
+  "height": 175,
+  "weight": 70,
+  "experienceTraining": "Intermedio",
+  "desiredTrainingDays": 4,
+  "healthIndications": "Ninguna",
+  "metabolism": "Rápido"
+}
+
+{
+  "name": "Laura",
+  "lastName": "González",
+  "age": 28,
+  "email": "laura.gonzalez@example.com",
+  "password": "SecurePass@123",
+  "phone": "3107654321",
+  "height": 165,
+  "weight": 60,
+  "experienceTraining": "Avanzado",
+  "desiredTrainingDays": 5,
+  "healthIndications": "Asma leve",
+  "metabolism": "Lento"
+}
+
+
+
+POST   http://localhost:4000/api/login
+{
+
+  "email": "samuel.monsalves@example.com",
+  "password": "StrongP@ss1"
+  
+}
+
+GET http://localhost:4000/api/getUsers
+
+GET http://localhost:4000/api/getUserByID/67f575910c10d2d333d2ec6e
+
+
+PUT http://localhost:4000/api/updateUser/67f575910c10d2d333d2ec6e
+
+{
+  "name": "Samuel",
+  "lastName": "Monsalve",
+  "age": 25,
+  "email": "laura.gonzalesz@example.com",
+  "password": "StrongP@ss1",
+  "phone": "310765321",
+  "height": 175,
+  "weight": 70,
+  "experienceTraining": "Intermedio",
+  "desiredTrainingDays": 4,
+  "healthIndications": "Ninguna",
+  "metabolism": "Rápido"
+}
+
+
+DELETE  http://localhost:4000/api/deleteUser/67f575910c10d2d333d2ec6e
