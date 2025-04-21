@@ -1,4 +1,4 @@
-const User = require("../models/user.js");
+const User = require("../../models/user"); // Importar el modelo de usuario
 
 //get para obtener los datos del usuario
 

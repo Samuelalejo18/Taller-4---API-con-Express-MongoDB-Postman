@@ -7,6 +7,7 @@ const cors = require("cors");
 
 const authRoutes = require("./routes/auth.routes.js");
 const routerCrudUser = require("./routes/user.routes.js");
+const routerCharBot = require("./routes/chatbot.routes.js");
 app.use(
   cors({
     origin: "http://localhost:8000",
@@ -22,6 +23,7 @@ app.use(cookieParser());
 
 app.use("/api", authRoutes);
 app.use("/api", routerCrudUser);
-require("./libs/gemini.js");
+app.use("/api", routerCharBot);
+
 require("./db.js");
 module.exports = app;

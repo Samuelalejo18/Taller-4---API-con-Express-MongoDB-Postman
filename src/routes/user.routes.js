@@ -7,11 +7,11 @@ const { registerSchema } = require("../schemas/userSchemaZod.js");
 const {
   getUsers,
   getUserByID,
-} = require("../controller/getUsers.Controller.js");
+} = require("../controller/CRUD/getUsers.Controller.js");
 
-const { updateUser } = require("../controller/updateUser.Controller.js");
+const { updateUser } = require("../controller/CRUD/updateUser.Controller.js");
 
-const { deleteUser } = require("../controller/deleteUser.controller.js");
+const { deleteUser } = require("../controller/CRUD/deleteUser.controller.js");
 
 routerCrudUser.get("/getUsers", getUsers);
 
