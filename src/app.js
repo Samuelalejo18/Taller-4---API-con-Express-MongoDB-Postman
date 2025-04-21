@@ -22,6 +22,6 @@ app.use(cookieParser());
 
 app.use("/api", authRoutes);
 app.use("/api", routerCrudUser);
-
+require("./libs/gemini.js");
 require("./db.js");
 module.exports = app;

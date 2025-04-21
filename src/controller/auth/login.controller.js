@@ -13,7 +13,7 @@ const { SECRET } = process.env;
 
 const login = async (req, res) => {
   try {
-    const { email, password} = req.body;
+    const { email, password } = req.body;
 
     //buscar si el correo existe
 
