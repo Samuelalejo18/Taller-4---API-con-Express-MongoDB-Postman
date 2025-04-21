@@ -19,6 +19,7 @@
   "homepage": "https://github.com/Samuelalejo18/Taller-4---API-con-Express-MongoDB-Postman#readme",
   "description": "",
   "dependencies": {
+    "@google/generative-ai": "^0.24.0",
     "bcrypt": "^5.1.1",
     "cookie-parser": "^1.4.7",
     "cors": "^2.8.5",
